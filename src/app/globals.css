@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-rose: #ff6b9d;
+  --color-lavender: #c084fc;
+  --color-babyblue: #60a5fa;
+  --color-bg: #fafafa;
+  --color-text: #1f2937;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply antialiased text-slate-text bg-warm-white;
+  line-height: 1.6;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-lavender;
+}
+
+/* Custom checkbox appearance - we use native for a11y but style the container */
+input[type="checkbox"] {
+  @apply sr-only;
+}
+
+/* Hero CTA styles */
+.hero-cta {
+  background: linear-gradient(90deg,#ff2d95 0%,#7c3aed 50%,#06b6d4 100%);
+  box-shadow: 0 10px 30px rgba(124,58,237,0.18), 0 6px 18px rgba(255,45,149,0.12);
+}
+.hero-cta:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Scroll indicator subtle style */
+.scroll-indicator { backdrop-filter: blur(6px); }
+
+/* Vignette and gradient headline styles */
+.hero-vignette {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.85) 100%);
+}
+
+.gradient-mischief {
+  background: linear-gradient(90deg,#ff6b9d 0%, #ff2d95 40%, #ff9ab8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 6px 28px rgba(255,45,149,0.12);
+}
+
+.gradient-purity {
+  background: linear-gradient(90deg,#7be7ff 0%, #5eead4 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 6px 28px rgba(59,130,246,0.08);
+}
+
+/* Subtle float for headline to add premium motion */
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+.font-display > .block, .font-display > span.block { animation: floatY 6s ease-in-out infinite; }
+
+/* CTA: stronger neon/gla ss look */
+.hero-cta {
+  background: linear-gradient(90deg,#ff2d95 0%,#7c3aed 50%,#06b6d4 100%);
+  box-shadow: 0 10px 40px rgba(99,102,241,0.18), 0 12px 30px rgba(255,45,149,0.12), 0 0 40px rgba(124,58,237,0.18) inset;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.hero-cta:hover { transform: translateY(-4px) scale(1.03); }
+
+/* small polish for scroll indicator */
+.scroll-indicator { transition: transform .25s ease, background .25s ease; }
+.scroll-indicator:hover { transform: translateY(-4px) scale(1.06); }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /result
+Sitemap: https://ricepurtytest.com/sitemap.xml
