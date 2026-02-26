@@ -7,7 +7,7 @@ export const metadata = {
   metadataBase: new URL('https://ricepurtytest.com'),
   openGraph: {
     title: 'Rice Purity Test 2026: Official Score & Meaning Guide',
-    description: 'Take the Rice Purity Test 2026 and get your Rice Purity Test score instantly. View score meaning, compare the average score, and check the official 100-question scale.',
+    description: 'Take the Rice Purity Test 2026 and get your score instantly. View score meaning, compare the average score, and check the official 100-question scale.',
     type: 'website',
     locale: 'en_US',
     url: 'https://ricepurtytest.com',

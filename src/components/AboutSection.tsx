@@ -51,9 +51,9 @@ export default function AboutSection() {
           className="space-y-12"
         >
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
               Discover Your Purity Score
-            </h1>
+            </h2>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               Explore the fascinating world of the Rice Purity Test through detailed insights, statistics, and meaningful explanations.
             </p>
