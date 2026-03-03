@@ -42,6 +42,14 @@ const orgSchema = {
 
 
 export default function HomePage() {
+  const publishDate = '2026-03-03';
+  const homepageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Rice Purity Test Homepage',
+    url: 'https://ricepurtytest.com',
+    datePublished: publishDate,
+  };
   return (
     <>
       <script
@@ -52,6 +60,13 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
+      <div style={{textAlign: 'center', fontSize: '0.9rem', color: '#666', marginBottom: '1rem'}}>
+        <span>Published: March 3, 2026</span>
+      </div>
       <PurityTestFlow />
     </>
   );
