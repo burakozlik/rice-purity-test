@@ -23,7 +23,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'The Official Rice Purity Test 2026 [updated]',
   description:
-    'Take the official Rice Purity Test with 100 unique questions. Find your score instantly, see how you compare, and share your results with friends. A fun quiz for college students to assess themselves.',
+    'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
   keywords : [
     "rice purity test",
     "the rice purity test",
@@ -89,8 +89,8 @@ export const metadata: Metadata = {
   },
   publisher: 'Rice Purity Test',
   openGraph: {
-    title: 'Rice Purity Test - 100 Question Quiz',
-    description: 'Test your purity score with 100 engaging questions. Instant results, anonymous & shareable. Join thousands of college students.',
+    title: 'The Official Rice Purity Test 2026 [updated]',
+    description: 'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
     type: 'website',
     locale: 'en_US',
     url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ricepurtytest.com',
@@ -98,8 +98,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rice Purity Test - Get Your Purity Score',
-    description: 'Take the 100-question Rice Purity Test. Anonymous, shareable, and instant results.',
+    title: 'The Official Rice Purity Test 2026 [updated]',
+    description: 'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
     creator: '@RicePurityTest',
   },
   robots: {

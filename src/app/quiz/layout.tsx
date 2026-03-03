@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Take the Rice Purity Test Quiz - 100 Questions',
-  description: 'Answer 100 carefully designed questions to calculate your purity score. Get instant results and share your score with friends. Anonymous and confidential quiz.',
+  title: 'The Official Rice Purity Test 2026 [updated]',
+  description: 'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
   robots: { index: true, follow: true },
 };
 

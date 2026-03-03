@@ -3,12 +3,12 @@ import PurityTestFlow from '@/components/PurityTestFlow';
 
 export const metadata = {
   title: 'The Official Rice Purity Test 2026 [updated]',
-  description: 'Take the official Rice Purity Test with 100 unique questions. Find your score instantly, see how you compare, and share your results with friends. A fun quiz for college students to assess themselves.',
+  description: 'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
   applicationName: 'Rice Purity Test 2026 Updated',
   metadataBase: new URL('https://ricepurtytest.com'),
   openGraph: {
     title: 'The Official Rice Purity Test 2026 [updated]',
-    description: 'Take the official Rice Purity Test with 100 unique questions. Find your score instantly, see how you compare, and share your results with friends. A fun quiz for college students to assess themselves.',
+    description: 'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
     type: 'website',
     locale: 'en_US',
     url: 'https://ricepurtytest.com',
@@ -26,7 +26,7 @@ const orgSchema = {
   name: 'Rice Purity Test',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ricepurtytest.com',
   logo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ricepurtytest.com'}/logo.png`,
-  description: 'An anonymous self-assessment quiz to measure personal experiences and purity score.',
+  description: 'Take the official Rice Purity Test with 100 questions. Get your score instantly, see how you rank, and share with friends. Fun college quiz!',
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'Support',
