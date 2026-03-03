@@ -21,9 +21,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Rice Purity Test 2026 - 100 Question Quiz With Score',
+  title: 'The Official Rice Purity Test 2026 [updated]',
   description:
-    'Take the official Rice Purity Test with 100 carefully crafted questions. Get your instant purity score, see how you rank, and share results with friends. Fun self-assessment quiz for college students.',
+    'Take the official Rice Purity Test with 100 unique questions. Find your score instantly, see how you compare, and share your results with friends. A fun quiz for college students to assess themselves.',
   keywords : [
     "rice purity test",
     "the rice purity test",
