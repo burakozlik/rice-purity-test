@@ -28,9 +28,25 @@ const faqItems = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  // FAQ JSON-LD structured data
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqItems.map(item => ({
+      '@type': 'Question',
+      'name': item.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': item.answer,
+      },
+    })),
+  };
+
   return (
     <section className="py-16 sm:py-20 lg:py-28 bg-slate-950">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        {/* FAQ JSON-LD for SEO */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

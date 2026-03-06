@@ -126,9 +126,12 @@ export default function HeroSection() {
               <button
                 onClick={handleScrollToQuiz}
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-button text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary-indigo/40 hover:scale-105 transform transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-indigo focus-visible:ring-offset-2 focus-visible:ring-offset-primary-navy"
+                aria-label="Start the Rice Purity Test"
               >
                 Start the Test
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" role="img">
+                  <title>Arrow icon</title>
+                  <desc>Arrow pointing right for CTA</desc>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </button>
@@ -139,6 +142,7 @@ export default function HeroSection() {
                   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-primary-indigo/40 text-primary-indigo font-semibold rounded-lg hover:bg-primary-indigo/10 hover:border-primary-indigo/60 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-indigo focus-visible:ring-offset-2 focus-visible:ring-offset-primary-navy"
+                aria-label="Learn more about Rice Purity Test"
               >
                 Learn More
               </button>
